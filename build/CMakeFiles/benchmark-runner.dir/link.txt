@@ -1,0 +1,1 @@
+/usr/bin/g++  -O3 -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/benchmark-runner.dir/link.d "CMakeFiles/benchmark-runner.dir/benchmarks/benchmark_runner.cpp.o" -o benchmark-runner  libmorpheus-engine.a

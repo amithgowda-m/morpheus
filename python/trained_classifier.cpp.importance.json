@@ -1,0 +1,11 @@
+{
+  "feature_importance": {
+    "l3_miss_rate": 0.04377129077409042,
+    "ipc": 0.4838177547745418,
+    "branch_miss_rate": 0.4722070606539544,
+    "l1_misses": 0.0,
+    "l2_misses": 0.0,
+    "instructions": 0.0,
+    "cycles": 0.00020389379741349328
+  }
+}

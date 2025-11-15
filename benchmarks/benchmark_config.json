@@ -1,0 +1,38 @@
+{
+  "defaults": {
+    "iterations": 5,
+    "validate": true,
+    "with_monitoring": false
+  },
+  "algorithms": {
+    "bfs": {
+      "source_vertex": 0,
+      "early_termination_depth": 0
+    },
+    "pagerank": {
+      "damping_factor": 0.85,
+      "tolerance": 1e-8,
+      "max_iterations": 100
+    },
+    "betweenness": {
+      "sample_size": 10,
+      "normalized": true
+    }
+  },
+  "monitoring": {
+    "sample_interval_ms": 1,
+    "events": [
+      "instructions",
+      "cycles", 
+      "l1_misses",
+      "l2_misses",
+      "l3_misses",
+      "branch_misses"
+    ]
+  },
+  "output": {
+    "format": "json",
+    "include_timestamp": true,
+    "compress": false
+  }
+}

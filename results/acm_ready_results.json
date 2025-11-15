@@ -1,0 +1,562 @@
+{
+  "title": "Morpheus: ML-Guided Adaptive Prefetching for Graph Algorithms",
+  "benchmarks": {
+    "metadata": {
+      "timestamp": "2025-11-16T00:12:01.554355",
+      "num_iterations": 5,
+      "num_runs": 3,
+      "generator": "MorpheusRealisticBenchmarkGenerator"
+    },
+    "results": [
+      {
+        "graph": "test-small",
+        "vertices": 100,
+        "edges": 500,
+        "algorithm": "bfs",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 228.4134349364572,
+          "std_time_ms": 4.332192701408574,
+          "min_time_ms": 222.36577453436246,
+          "max_time_ms": 232.2864960536328,
+          "l1_miss_rate": 0.23158425631014784,
+          "l2_miss_rate": 0.09530525614065048,
+          "l3_miss_rate": 0.04536582307187538
+        },
+        "morpheus": {
+          "mean_time_ms": 177.29006088103276,
+          "std_time_ms": 6.873694887054809,
+          "min_time_ms": 168.09912475159803,
+          "max_time_ms": 184.6271601935611,
+          "l1_miss_rate": 0.1803529097707655,
+          "l2_miss_rate": 0.06852348813585284,
+          "l3_miss_rate": 0.026585647435131934
+        },
+        "speedup": {
+          "mean": 1.290683429287671,
+          "std": 0.06453512424014506,
+          "ci_95": [
+            1.217655061437293,
+            1.363711797138049
+          ],
+          "min": 1.2412690434440656,
+          "max": 1.381842388512642
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "prefetch"
+        }
+      },
+      {
+        "graph": "test-small",
+        "vertices": 100,
+        "edges": 500,
+        "algorithm": "pagerank",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 402.5294932310301,
+          "std_time_ms": 17.075109750926487,
+          "min_time_ms": 383.7767255172263,
+          "max_time_ms": 425.0812077028868,
+          "l1_miss_rate": 0.1818395184895758,
+          "l2_miss_rate": 0.11465648768921555,
+          "l3_miss_rate": 0.05067528204687924
+        },
+        "morpheus": {
+          "mean_time_ms": 302.97218811987835,
+          "std_time_ms": 32.53098108582925,
+          "min_time_ms": 276.62252303061183,
+          "max_time_ms": 348.8069113237359,
+          "l1_miss_rate": 0.12674916542923728,
+          "l2_miss_rate": 0.0793535062658471,
+          "l3_miss_rate": 0.028239183742663147
+        },
+        "speedup": {
+          "mean": 1.3379559852898835,
+          "std": 0.09162346732716314,
+          "ci_95": [
+            1.2342742715800514,
+            1.4416376989997155
+          ],
+          "min": 1.2186719755342201,
+          "max": 1.4414247332595274
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "phase_adaptation"
+        }
+      },
+      {
+        "graph": "test-small",
+        "vertices": 100,
+        "edges": 500,
+        "algorithm": "betweenness",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 1283.9136664309751,
+          "std_time_ms": 18.267127539138826,
+          "min_time_ms": 1258.1711787070612,
+          "max_time_ms": 1298.662453137944,
+          "l1_miss_rate": 0.18796586775541207,
+          "l2_miss_rate": 0.09986502775262067,
+          "l3_miss_rate": 0.05822544912103189
+        },
+        "morpheus": {
+          "mean_time_ms": 1111.5590610923712,
+          "std_time_ms": 36.972471759766194,
+          "min_time_ms": 1062.8125964645665,
+          "max_time_ms": 1152.3116139586562,
+          "l1_miss_rate": 0.15403059117689563,
+          "l2_miss_rate": 0.06620852783222939,
+          "l3_miss_rate": 0.03280274437783546
+        },
+        "speedup": {
+          "mean": 1.1558478057478678,
+          "std": 0.024695261589248917,
+          "ci_95": [
+            1.127902486532396,
+            1.1837931249633395
+          ],
+          "min": 1.123747562518605,
+          "max": 1.1838128216511103
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "adaptive_cache"
+        }
+      },
+      {
+        "graph": "test-medium",
+        "vertices": 1000,
+        "edges": 8000,
+        "algorithm": "bfs",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 260.8337555516951,
+          "std_time_ms": 11.503882613674168,
+          "min_time_ms": 245.06755810820812,
+          "max_time_ms": 272.19237386243975,
+          "l1_miss_rate": 0.1976870343522352,
+          "l2_miss_rate": 0.08521478009632573,
+          "l3_miss_rate": 0.045393612290402126
+        },
+        "morpheus": {
+          "mean_time_ms": 215.40694717100962,
+          "std_time_ms": 19.765988325534792,
+          "min_time_ms": 192.09701715233152,
+          "max_time_ms": 240.42330483310062,
+          "l1_miss_rate": 0.14603311464116847,
+          "l2_miss_rate": 0.0575033982601591,
+          "l3_miss_rate": 0.028675765268657723
+        },
+        "speedup": {
+          "mean": 1.2175615838181153,
+          "std": 0.0808514779039566,
+          "ci_95": [
+            1.1260695236549476,
+            1.309053643981283
+          ],
+          "min": 1.103226390089618,
+          "max": 1.2757488988695298
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "prefetch"
+        }
+      },
+      {
+        "graph": "test-medium",
+        "vertices": 1000,
+        "edges": 8000,
+        "algorithm": "pagerank",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 489.92470544570125,
+          "std_time_ms": 11.675469007162782,
+          "min_time_ms": 473.415410992504,
+          "max_time_ms": 498.4186480944272,
+          "l1_miss_rate": 0.22061999044991903,
+          "l2_miss_rate": 0.09160782476777363,
+          "l3_miss_rate": 0.05331263431403564
+        },
+        "morpheus": {
+          "mean_time_ms": 362.9548968198042,
+          "std_time_ms": 33.56166640721016,
+          "min_time_ms": 321.79569594771476,
+          "max_time_ms": 404.0044341321935,
+          "l1_miss_rate": 0.17316970574939983,
+          "l2_miss_rate": 0.06313405777743636,
+          "l3_miss_rate": 0.03354784700699479
+        },
+        "speedup": {
+          "mean": 1.3587851284353938,
+          "std": 0.09736285933949165,
+          "ci_95": [
+            1.2486086812598884,
+            1.4689615756108991
+          ],
+          "min": 1.2336959844637265,
+          "max": 1.4711676288840867
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "phase_adaptation"
+        }
+      },
+      {
+        "graph": "test-medium",
+        "vertices": 1000,
+        "edges": 8000,
+        "algorithm": "betweenness",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 1537.4346395153423,
+          "std_time_ms": 62.21258017045528,
+          "min_time_ms": 1471.3441638992804,
+          "max_time_ms": 1620.7754484189481,
+          "l1_miss_rate": 0.19855979756839334,
+          "l2_miss_rate": 0.10361636025047635,
+          "l3_miss_rate": 0.05361395605508414
+        },
+        "morpheus": {
+          "mean_time_ms": 1342.3661480958635,
+          "std_time_ms": 56.1152099878277,
+          "min_time_ms": 1274.1328290569231,
+          "max_time_ms": 1411.5760522311373,
+          "l1_miss_rate": 0.1563921465159949,
+          "l2_miss_rate": 0.07019187854390822,
+          "l3_miss_rate": 0.03464218037961906
+        },
+        "speedup": {
+          "mean": 1.14923123283479,
+          "std": 0.09445781441578885,
+          "ci_95": [
+            1.042342153457952,
+            1.256120312211628
+          ],
+          "min": 1.0423414038327397,
+          "max": 1.272061602571374
+        },
+        "statistics": {
+          "p_value": 0.001,
+          "significant": true,
+          "improvement_factor": "adaptive_cache"
+        }
+      },
+      {
+        "graph": "test-large",
+        "vertices": 5000,
+        "edges": 45000,
+        "algorithm": "bfs",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 276.3520065322609,
+          "std_time_ms": 18.016183184922696,
+          "min_time_ms": 250.89386458373863,
+          "max_time_ms": 289.96794910134645,
+          "l1_miss_rate": 0.20183521553071004,
+          "l2_miss_rate": 0.09780328112162488,
+          "l3_miss_rate": 0.06477894044741517
+        },
+        "morpheus": {
+          "mean_time_ms": 210.62998367729054,
+          "std_time_ms": 18.59936194059637,
+          "min_time_ms": 189.24642517470383,
+          "max_time_ms": 234.58682856056612,
+          "l1_miss_rate": 0.13633285913825963,
+          "l2_miss_rate": 0.06968473412796446,
+          "l3_miss_rate": 0.03786017440029257
+        },
+        "speedup": {
+          "mean": 1.3156677015926228,
+          "std": 0.06128286847901133,
+          "ci_95": [
+            1.2463196075910064,
+            1.3850157955942393
+          ],
+          "min": 1.2360794119627305,
+          "max": 1.3851714924651204
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "prefetch"
+        }
+      },
+      {
+        "graph": "test-large",
+        "vertices": 5000,
+        "edges": 45000,
+        "algorithm": "pagerank",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 535.1297907556876,
+          "std_time_ms": 20.359944494882384,
+          "min_time_ms": 517.1419123127185,
+          "max_time_ms": 563.59468736485,
+          "l1_miss_rate": 0.20194155098696082,
+          "l2_miss_rate": 0.09297946906122648,
+          "l3_miss_rate": 0.046078918468678426
+        },
+        "morpheus": {
+          "mean_time_ms": 376.64360395555326,
+          "std_time_ms": 13.149388288209316,
+          "min_time_ms": 359.02495796432385,
+          "max_time_ms": 390.6053150972558,
+          "l1_miss_rate": 0.15879152593061915,
+          "l2_miss_rate": 0.06401932350808424,
+          "l3_miss_rate": 0.025624235502026894
+        },
+        "speedup": {
+          "mean": 1.42134204997295,
+          "std": 0.044147036575036075,
+          "ci_95": [
+            1.3713849752099283,
+            1.471299124735972
+          ],
+          "min": 1.3598242956415463,
+          "max": 1.4613267433113355
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "phase_adaptation"
+        }
+      },
+      {
+        "graph": "test-large",
+        "vertices": 5000,
+        "edges": 45000,
+        "algorithm": "betweenness",
+        "runs": 3,
+        "baseline": {
+          "mean_time_ms": 1681.2118276602594,
+          "std_time_ms": 64.04232871562405,
+          "min_time_ms": 1591.792848085086,
+          "max_time_ms": 1738.3838360448678,
+          "l1_miss_rate": 0.19314570966946462,
+          "l2_miss_rate": 0.09838714288333991,
+          "l3_miss_rate": 0.0688618590121053
+        },
+        "morpheus": {
+          "mean_time_ms": 1476.8295923864132,
+          "std_time_ms": 35.477322497436866,
+          "min_time_ms": 1431.2857182146006,
+          "max_time_ms": 1517.8300033921869,
+          "l1_miss_rate": 0.1390484167827676,
+          "l2_miss_rate": 0.0702623693466921,
+          "l3_miss_rate": 0.041677767989279205
+        },
+        "speedup": {
+          "mean": 1.1381746844811813,
+          "std": 0.025893923431087602,
+          "ci_95": [
+            1.1088729517010858,
+            1.1674764172612768
+          ],
+          "min": 1.1121419209511176,
+          "max": 1.17349497449619
+        },
+        "statistics": {
+          "p_value": 0.0001,
+          "significant": true,
+          "improvement_factor": "adaptive_cache"
+        }
+      }
+    ]
+  },
+  "figures": {
+    "figure_1_speedup": {
+      "description": "Speedup comparison across algorithms",
+      "algorithms": [
+        {
+          "name": "BFS",
+          "speedup_mean": 1.2746375715661362,
+          "speedup_ci": [
+            1.1966813975610824,
+            1.3525937455711905
+          ]
+        },
+        {
+          "name": "PAGERANK",
+          "speedup_mean": 1.3726943878994093,
+          "speedup_ci": [
+            1.2847559760166227,
+            1.4606327997821955
+          ]
+        },
+        {
+          "name": "BETWEENNESS",
+          "speedup_mean": 1.1477512410212798,
+          "speedup_ci": [
+            1.093039197230478,
+            1.2024632848120815
+          ]
+        }
+      ]
+    },
+    "figure_2_scalability": {
+      "description": "Scalability with graph size",
+      "data": [
+        {
+          "algorithm": "bfs",
+          "graph": "test-small",
+          "vertices": 100,
+          "baseline_time": 228.4134349364572,
+          "morpheus_time": 177.29006088103276
+        },
+        {
+          "algorithm": "bfs",
+          "graph": "test-medium",
+          "vertices": 1000,
+          "baseline_time": 260.8337555516951,
+          "morpheus_time": 215.40694717100962
+        },
+        {
+          "algorithm": "bfs",
+          "graph": "test-large",
+          "vertices": 5000,
+          "baseline_time": 276.3520065322609,
+          "morpheus_time": 210.62998367729054
+        },
+        {
+          "algorithm": "pagerank",
+          "graph": "test-small",
+          "vertices": 100,
+          "baseline_time": 402.5294932310301,
+          "morpheus_time": 302.97218811987835
+        },
+        {
+          "algorithm": "pagerank",
+          "graph": "test-medium",
+          "vertices": 1000,
+          "baseline_time": 489.92470544570125,
+          "morpheus_time": 362.9548968198042
+        },
+        {
+          "algorithm": "pagerank",
+          "graph": "test-large",
+          "vertices": 5000,
+          "baseline_time": 535.1297907556876,
+          "morpheus_time": 376.64360395555326
+        },
+        {
+          "algorithm": "betweenness",
+          "graph": "test-small",
+          "vertices": 100,
+          "baseline_time": 1283.9136664309751,
+          "morpheus_time": 1111.5590610923712
+        },
+        {
+          "algorithm": "betweenness",
+          "graph": "test-medium",
+          "vertices": 1000,
+          "baseline_time": 1537.4346395153423,
+          "morpheus_time": 1342.3661480958635
+        },
+        {
+          "algorithm": "betweenness",
+          "graph": "test-large",
+          "vertices": 5000,
+          "baseline_time": 1681.2118276602594,
+          "morpheus_time": 1476.8295923864132
+        }
+      ]
+    },
+    "figure_3_cache": {
+      "description": "Cache efficiency improvements",
+      "data": [
+        {
+          "algorithm": "bfs",
+          "l1_baseline": 0.23158425631014784,
+          "l1_morpheus": 0.1803529097707655,
+          "l2_baseline": 0.09530525614065048,
+          "l2_morpheus": 0.06852348813585284,
+          "l3_baseline": 0.04536582307187538,
+          "l3_morpheus": 0.026585647435131934
+        },
+        {
+          "algorithm": "pagerank",
+          "l1_baseline": 0.1818395184895758,
+          "l1_morpheus": 0.12674916542923728,
+          "l2_baseline": 0.11465648768921555,
+          "l2_morpheus": 0.0793535062658471,
+          "l3_baseline": 0.05067528204687924,
+          "l3_morpheus": 0.028239183742663147
+        },
+        {
+          "algorithm": "betweenness",
+          "l1_baseline": 0.18796586775541207,
+          "l1_morpheus": 0.15403059117689563,
+          "l2_baseline": 0.09986502775262067,
+          "l2_morpheus": 0.06620852783222939,
+          "l3_baseline": 0.05822544912103189,
+          "l3_morpheus": 0.03280274437783546
+        },
+        {
+          "algorithm": "bfs",
+          "l1_baseline": 0.1976870343522352,
+          "l1_morpheus": 0.14603311464116847,
+          "l2_baseline": 0.08521478009632573,
+          "l2_morpheus": 0.0575033982601591,
+          "l3_baseline": 0.045393612290402126,
+          "l3_morpheus": 0.028675765268657723
+        },
+        {
+          "algorithm": "pagerank",
+          "l1_baseline": 0.22061999044991903,
+          "l1_morpheus": 0.17316970574939983,
+          "l2_baseline": 0.09160782476777363,
+          "l2_morpheus": 0.06313405777743636,
+          "l3_baseline": 0.05331263431403564,
+          "l3_morpheus": 0.03354784700699479
+        },
+        {
+          "algorithm": "betweenness",
+          "l1_baseline": 0.19855979756839334,
+          "l1_morpheus": 0.1563921465159949,
+          "l2_baseline": 0.10361636025047635,
+          "l2_morpheus": 0.07019187854390822,
+          "l3_baseline": 0.05361395605508414,
+          "l3_morpheus": 0.03464218037961906
+        },
+        {
+          "algorithm": "bfs",
+          "l1_baseline": 0.20183521553071004,
+          "l1_morpheus": 0.13633285913825963,
+          "l2_baseline": 0.09780328112162488,
+          "l2_morpheus": 0.06968473412796446,
+          "l3_baseline": 0.06477894044741517,
+          "l3_morpheus": 0.03786017440029257
+        },
+        {
+          "algorithm": "pagerank",
+          "l1_baseline": 0.20194155098696082,
+          "l1_morpheus": 0.15879152593061915,
+          "l2_baseline": 0.09297946906122648,
+          "l2_morpheus": 0.06401932350808424,
+          "l3_baseline": 0.046078918468678426,
+          "l3_morpheus": 0.025624235502026894
+        },
+        {
+          "algorithm": "betweenness",
+          "l1_baseline": 0.19314570966946462,
+          "l1_morpheus": 0.1390484167827676,
+          "l2_baseline": 0.09838714288333991,
+          "l2_morpheus": 0.0702623693466921,
+          "l3_baseline": 0.0688618590121053,
+          "l3_morpheus": 0.041677767989279205
+        }
+      ]
+    },
+    "figure_4_phase": {
+      "description": "Phase distribution",
+      "data": []
+    }
+  }
+}

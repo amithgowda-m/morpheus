@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/graph/csr_graph.cpp.o -c /home/amithgowda/morpheus/src/engine/graph/csr_graph.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/graph/csr_graph.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/graph/csr_graph.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/graph/graph_generator.cpp.o -c /home/amithgowda/morpheus/src/engine/graph/graph_generator.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/graph/graph_generator.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/graph/graph_generator.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/algorithms/bfs.cpp.o -c /home/amithgowda/morpheus/src/engine/algorithms/bfs.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/algorithms/bfs.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/algorithms/bfs.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/algorithms/pagerank.cpp.o -c /home/amithgowda/morpheus/src/engine/algorithms/pagerank.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/algorithms/pagerank.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/algorithms/pagerank.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/algorithms/betweenness.cpp.o -c /home/amithgowda/morpheus/src/engine/algorithms/betweenness.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/algorithms/betweenness.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/algorithms/betweenness.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/engine/monitoring/performance_monitor.cpp.o -c /home/amithgowda/morpheus/src/engine/monitoring/performance_monitor.cpp",
+  "file": "/home/amithgowda/morpheus/src/engine/monitoring/performance_monitor.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/engine/monitoring/performance_monitor.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/utils/config_parser.cpp.o -c /home/amithgowda/morpheus/src/utils/config_parser.cpp",
+  "file": "/home/amithgowda/morpheus/src/utils/config_parser.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/utils/config_parser.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/morpheus-engine.dir/src/utils/result_writer.cpp.o -c /home/amithgowda/morpheus/src/utils/result_writer.cpp",
+  "file": "/home/amithgowda/morpheus/src/utils/result_writer.cpp",
+  "output": "CMakeFiles/morpheus-engine.dir/src/utils/result_writer.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/test_graph.dir/tests/test_graph.cpp.o -c /home/amithgowda/morpheus/tests/test_graph.cpp",
+  "file": "/home/amithgowda/morpheus/tests/test_graph.cpp",
+  "output": "CMakeFiles/test_graph.dir/tests/test_graph.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/test_bfs.dir/tests/test_bfs.cpp.o -c /home/amithgowda/morpheus/tests/test_bfs.cpp",
+  "file": "/home/amithgowda/morpheus/tests/test_bfs.cpp",
+  "output": "CMakeFiles/test_bfs.dir/tests/test_bfs.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/test_pagerank.dir/tests/test_pagerank.cpp.o -c /home/amithgowda/morpheus/tests/test_pagerank.cpp",
+  "file": "/home/amithgowda/morpheus/tests/test_pagerank.cpp",
+  "output": "CMakeFiles/test_pagerank.dir/tests/test_pagerank.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/test_integration.dir/tests/test_integration.cpp.o -c /home/amithgowda/morpheus/tests/test_integration.cpp",
+  "file": "/home/amithgowda/morpheus/tests/test_integration.cpp",
+  "output": "CMakeFiles/test_integration.dir/tests/test_integration.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/test_classifier_validation.dir/tests/test_classifier_validation.cpp.o -c /home/amithgowda/morpheus/tests/test_classifier_validation.cpp",
+  "file": "/home/amithgowda/morpheus/tests/test_classifier_validation.cpp",
+  "output": "CMakeFiles/test_classifier_validation.dir/tests/test_classifier_validation.cpp.o"
+},
+{
+  "directory": "/home/amithgowda/morpheus/build",
+  "command": "/usr/bin/g++  -I/home/amithgowda/morpheus/src/engine -I/home/amithgowda/morpheus/src/utils  -O3 -march=native -O3 -DNDEBUG -std=c++17 -o CMakeFiles/benchmark-runner.dir/benchmarks/benchmark_runner.cpp.o -c /home/amithgowda/morpheus/benchmarks/benchmark_runner.cpp",
+  "file": "/home/amithgowda/morpheus/benchmarks/benchmark_runner.cpp",
+  "output": "CMakeFiles/benchmark-runner.dir/benchmarks/benchmark_runner.cpp.o"
+}
+]

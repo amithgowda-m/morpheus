@@ -1,0 +1,1 @@
+/usr/bin/g++  -O3 -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test_classifier_validation.dir/link.d CMakeFiles/test_classifier_validation.dir/tests/test_classifier_validation.cpp.o -o test_classifier_validation  libmorpheus-engine.a

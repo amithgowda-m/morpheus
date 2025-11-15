@@ -1,0 +1,1 @@
+/usr/bin/g++  -O3 -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test_pagerank.dir/link.d CMakeFiles/test_pagerank.dir/tests/test_pagerank.cpp.o -o test_pagerank  libmorpheus-engine.a
